@@ -1,4 +1,4 @@
-#JavaScript Global Objects
+# JavaScript Global Objects
 
 This chapter documents all the JavaScript built-in objects, along with their methods and properties
 
