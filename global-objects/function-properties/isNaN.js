@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-globals */
 /**
  * The isNaN() function determines whether a value is NaN or not.
  * Note: coercion inside the isNaN function has interesting rules;

@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-escape */
 /**
  * The parseFloat() function parses an argument and returns a floating point number.
  */

@@ -1,7 +1,3 @@
-/* eslint-disable no-self-compare */
-/* eslint-disable use-isnan */
-/* eslint-disable no-restricted-globals */
-
 /* The global NaN property is a value representing Not-A-Number. */
 
 function sanitise(x) {
@@ -26,8 +22,8 @@ console.log(sanitise('NotANumber'));
   In modern browsers, NaN is a non-configurable, non-writable property.
   Even when this is not the case, avoid overriding it.
 
-  It is rather rare to use NaN in a program. 
-  It is the returned value when Math functions fail (Math.sqrt(-1)) or 
+  It is rather rare to use NaN in a program.
+  It is the returned value when Math functions fail (Math.sqrt(-1)) or
   when a function trying to parse a number fails (parseInt("blabla")).
 
 */
@@ -51,8 +47,8 @@ console.log(valueIsNaN(NaN)); // true
 console.log(valueIsNaN(Number.NaN)); // true
 
 /*
- However, do note the difference between isNaN() and Number.isNaN(): 
- the former will return true if the value is currently NaN, 
+ However, do note the difference between isNaN() and Number.isNaN():
+ the former will return true if the value is currently NaN,
   or if it is going to be NaN after it is coerced to a number,
   while the latter will return true only if the value is currently NaN:
  */

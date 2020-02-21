@@ -1,7 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-new-wrappers */
-/* eslint-disable no-eval */
-
 /*
   The eval() function evaluates JavaScript code represented as a string.
 */
@@ -107,7 +103,6 @@ function badLooseJsonParse(obj) {
 
 // Better code without eval:
 function betterLooseJsonParse(obj) {
-  // eslint-disable-next-line no-new-func
   return Function(`"use strict";return (${obj})`)();
 }
 console.log(betterLooseJsonParse('{a:(4-1), b:function(){}, c:new Date()}'));
