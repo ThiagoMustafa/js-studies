@@ -28,4 +28,7 @@ console.log(Array.from({length: 5}, (value, index) => index), "Arrow function 2"
 const range = (start, stop, step) => Array.from({length: (stop - step) / step + 1}, (_, i) => start + (i * step));
 console.log(range(0, 4, 1), "Range 1")
 console.log(range(1, 10, 2), "Range 2")
-console.log(range('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x)), "Generate Alphabet")
+
+//Generate Alphabet
+const regex = RegExp('[A-Z]');
+console.log(range('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x)).filter(x => regex.test(x)), "Generate Alphabet")
